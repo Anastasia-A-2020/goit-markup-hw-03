@@ -341,10 +341,12 @@ header .logo {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .projects-list-item:not(:nth-child(3n)) {
-    margin-right: 30px;
+   /*margin-right: 30px;*/
 }
 
 .project__buttons-list-item {
@@ -379,10 +381,7 @@ header .logo {
     }
 
     .projects-list-text {
-        padding-top: 4px;
-        padding-bottom: 20px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 4px 24px 20px;
     }
 
 .projects-list-title {
