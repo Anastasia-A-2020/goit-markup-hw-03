@@ -13,10 +13,6 @@ body {
 }
 
 /*=============== COMPONENTS ===============*/
-.header {
-    outline: 2px solid red;
-}
-
 h1,
 h2,
 h3,
@@ -138,14 +134,28 @@ header .logo {
 
 /*=============== HERO ===============*/
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #2F303A;
 } /*добавила, чтоб видно было надпись*/
+.hero .conteiner {
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+}
 
 .hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
     text-transform: uppercase;
+    padding-left: 300px;
+    padding-right: 300px;
     color: var(--color-lead);
 }
 
@@ -154,6 +164,13 @@ header .logo {
     font-size: 16px;
     line-height: 1.875;
     color: var(--color-lead);
+    cursor: pointer;
+    
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-top: 30px;
+    background-color: var(--accent-color);
 }
 
 /*=============== END HERO ===============*/
@@ -205,6 +222,9 @@ header .logo {
 /*=============== END TEAM ===============*/
 
 /*=============== FOOTER ===============*/
+.footer {
+    background-color: #2F303A;
+} /*добавила, чтоб видно было надпись*/
 .location {
     font-weight: 400;
     font-size: 14px;
