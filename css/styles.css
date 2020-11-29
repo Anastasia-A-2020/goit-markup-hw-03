@@ -341,24 +341,16 @@ header .logo {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-}
-
-.projects-list-item:not(:nth-child(3n)) {
-   /*margin-right: 30px;*/
-}
-
-.project__buttons-list-item {
-    align-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
 .projects-list-item {
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-    width: 370px;    
+    /*border: 1px solid #EEEEEE;*/
+    flex-basis: calc(100/3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;  
 }
 
 .project__buttons-list-item:not(:last-child) {
@@ -380,9 +372,9 @@ header .logo {
     border: none;
     }
 
-    .projects-list-text {
-        padding: 4px 24px 20px;
-    }
+.projects-list-text {
+    padding: 4px 24px 20px;
+}
 
 .projects-list-title {
     font-weight: 700;
