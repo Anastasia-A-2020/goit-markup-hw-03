@@ -184,17 +184,13 @@ header .logo {
 /*=============== DISCRIPTION ===============*/
 .advantage__list {
     display: flex;
-    box-sizing: border-box;
+   flex-wrap: wrap;
 }
 
 .advantage {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-/*.advantage__list-item {
-    flex-wrap: wrap;
-}*/
 
 .advantage__list-item:not(:last-child) {
     padding-right: 30px;
