@@ -14,6 +14,12 @@ body {
 }
 
 /*=============== COMPONENTS ===============*/
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+} 
+
 h1,
 h2,
 h3,
@@ -21,6 +27,7 @@ h4,
 h5,
 h6 {
     margin: 0;
+    padding: 0;
 }
 
 ul,
@@ -31,6 +38,7 @@ ol {
 
 p {
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -155,9 +163,12 @@ header .logo {
     font-size: 44px;
     line-height: 1.364;
     text-transform: uppercase;
-    width: 600px;
     color: var(--color-lead);
-    padding-left: 285px;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
 }
 
 .button {
@@ -168,7 +179,6 @@ header .logo {
     min-width: 200px;
     border-radius: 4px;
     padding: 10px 32px;
-    margin-top: 30px;
     border: 0px;
 }
 .project__buttons-list-item-button:hover,
